@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+      @import url("css/style.css");
+    </style>
+    <title>form pizzeria</title>
+  </head>
+  <body>
+    <div class="contenitore-form">
+      <form name="pizzeria" action="index.html" method="POST">
+        <div class="sfondo"></div>
+
+        <div class="form-scritto">
+          <label for="pizza">Scegli una pizza:</label>
+
+          <div class="cont-ul">
+            Seleziona una Pizza
+
+            <ul id="pizza">
+              <li
+                style="--comparsa: 1"
+                data-value="3"
+                data-name="pizza bianca"
+                class="item-pizza pizza-choice"
+              >
+                Pizza bianca
+              </li>
+
+              <li
+                style="--comparsa: 2"
+                data-value="5.50"
+                data-name="pizza margherita"
+                class="item-pizza pizza-choice"
+              >
+                Pizza Margherita
+              </li>
+
+              <li
+                style="--comparsa: 3"
+                data-value="4.50"
+                data-name="Pizza alle verdure"
+                class="item-pizza pizza-choice"
+              >
+                Pizza alle Verdure
+              </li>
+            </ul>
+          </div>
+
+          <input
+            class="reset resetta-pizza"
+            name="reset"
+            type="reset"
+            value="cancella pizza"
+          />
+
+          <div class="possibilita possibili-pizze"></div>
+
+          <label for="bibita">Scegli la tua bibita:</label>
+
+          <div class="cont-ul">
+            Seleziona una bibita
+
+            <ul id="bibita">
+              <li
+                style="--comparsa: 1"
+                data-value="2.5"
+                data-name="acqua"
+                class="item-bibita bibita-choice"
+              >
+                acqua
+              </li>
+
+              <li
+                style="--comparsa: 2"
+                data-value="3"
+                data-name="coca cola"
+                class="item-bibita bibita-choice"
+              >
+                coca cola
+              </li>
+
+              <li
+                style="--comparsa: 3"
+                data-value="4.5"
+                data-name="birra"
+                class="item-bibita bibita-choice"
+              >
+                birra
+              </li>
+            </ul>
+          </div>
+
+          <input
+            class="reset resetta-bibita"
+            name="reset"
+            type="reset"
+            value="cancella bibita"
+          />
+
+          <div class="possibilita possibili-bibite"></div>
+
+          <input
+            class="valore_pizza"
+            name="valore_pizza"
+            type="hidden"
+            value=""
+          />
+          <input
+            class="valore_bibita"
+            name="valore_bibita"
+            type="hidden"
+            value=""
+          />
+
+          <input
+            class="btn-conferma-promo"
+            name="btn"
+            type="submit"
+            value="Scopri il tuo prezzo promozionale"
+          />
+
+          <input
+            value="Promo Prezzo"
+            class="promoBibitaPizza"
+            type="text"
+            name="costo"
+            readonly
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

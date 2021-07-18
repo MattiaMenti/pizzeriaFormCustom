@@ -1,0 +1,397 @@
+/* font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Kanit', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contenitore-form {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenitore-form form {
+  position: relative;
+  height: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* style-facoltativo */
+  background: url("../img/pizza2.jpg");
+  width: 500px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenitore-form .sfondo {
+  opacity: 0.6;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcac80+0,ea5507+0,ea5507+0,ea5507+9,f17432+36,ea5507+36,ea5507+36,f17432+90,f17432+90,ea5507+90,ea5507+90,fb955e+100 */
+  background: rgb(252, 172, 128); /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(252, 172, 128, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 9%,
+    rgba(241, 116, 50, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(251, 149, 94, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(252, 172, 128, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 9%,
+    rgba(241, 116, 50, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(251, 149, 94, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    rgba(252, 172, 128, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 0%,
+    rgba(234, 85, 7, 1) 9%,
+    rgba(241, 116, 50, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(234, 85, 7, 1) 36%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(241, 116, 50, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(234, 85, 7, 1) 90%,
+    rgba(251, 149, 94, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcac80', endColorstr='#fb955e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 15px;
+}
+
+.contenitore-form form .form-scritto {
+  perspective: 1000px;
+  position: relative;
+  height: auto;
+  padding: 50px 0;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* style-facoltativo */
+  width: 100%;
+}
+
+.contenitore-form form .form-scritto .possibilita p.appareItem {
+  /* border: 1px solid #fff; */
+  margin-bottom: 15px;
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 0;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+  background: #f46b45; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45deg,
+    #eea849,
+    #ec4111 90%
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #f35a1e,
+    #fa4711 90%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid #eff3db7c;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  /* style addizionale */
+
+  border-radius: 10px;
+  opacity: 1;
+
+  animation: apparizione 0.3s linear;
+
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes apparizione {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.viaEl {
+  animation: via 0.45s linear !important;
+}
+
+@keyframes via {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+
+.contenitore-form form .form-scritto label {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.contenitore-form form .form-scritto .cont-ul {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  appearance: none;
+  color: rgb(255, 255, 255);
+  min-width: 220px;
+  width: auto;
+  padding: 5px 10px 0 10px;
+  height: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.4s ease-in-out;
+
+  position: relative;
+}
+
+.contenitore-form form .form-scritto .cont-ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 220px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  appearance: none;
+  color: rgb(255, 255, 255);
+  height: auto;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transform: translateY(-15%);
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 0 0 15px 15px;
+  visibility: hidden;
+  transition: opacity 0.2s ease 0.1s, transform 0.3s ease 0.1s;
+}
+
+.sparizione {
+  opacity: 0 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.contenitore-form form .form-scritto .cont-ul:hover ul {
+  opacity: 1;
+  transform: translateY(-5%);
+  visibility: visible;
+  transition-delay: 0s, 0.1s;
+}
+
+.contenitore-form form .form-scritto .cont-ul:hover {
+  /* background-color: #ec4111; */
+
+  background-color: rgb(255, 103, 3);
+}
+
+/* 
+.contenitore-form form .form-scritto select optgroup {
+  background: rgba(247, 151, 33, 0.856);
+  font-family: "Quicksand", sans-serif;
+  color: #fa4711;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.contenitore-form form .form-scritto select optgroup option {
+  background: rgba(243, 5, 5, 0.8);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+} */
+/* 
+.contenitore-form form .form-scritto select option {
+  background: rgba(255, 0, 0, 0.836);
+  cursor: pointer;
+} */
+
+.contenitore-form form .form-scritto .cont-ul ul li {
+  background: rgba(243, 5, 5, 1);
+  border-bottom: 1px solid rgb(204, 100, 4);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 0;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  padding-left: 20px;
+  text-align: left;
+  width: 220px;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.contenitore-form form .form-scritto .cont-ul ul li:nth-child(1) {
+  border-top: 1px solid white;
+}
+
+.contenitore-form form .form-scritto .cont-ul:hover ul li {
+  transform-origin: top;
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: calc(var(--comparsa) * 100ms);
+}
+
+.contenitore-form form .form-scritto .promoBibitaPizza {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  appearance: none;
+  color: rgb(255, 255, 255);
+  min-width: 220px;
+  width: auto;
+  padding: 0 10px;
+  height: 35px;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.contenitore-form form .form-scritto .reset {
+  margin-top: 20px;
+  border: none;
+  background: rgba(243, 5, 5, 0.8);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  appearance: none;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 30px;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.contenitore-form form .form-scritto .reset:hover {
+  transform: scale(1.2);
+  transform-style: preserve-3d;
+  transform: translateZ(30px);
+}
+
+.contenitore-form form .form-scritto .btn-conferma-promo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 2px -2px 10px rgba(199, 9, 9, 0.534), -2px 2px 10px #ff6a00;
+
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  font-size: 17px;
+  outline: none;
+  appearance: none;
+
+  color: rgb(255, 255, 255);
+  background-size: 200%;
+  background-position-x: 0%;
+
+  height: 40px;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.contenitore-form form .form-scritto .btn-conferma-promo:hover {
+  background-position-x: 100%;
+  box-shadow: 1px -1px 10px rgba(255, 255, 255, 0.3),
+    1px -1px 10px rgba(255, 255, 255, 0.3);
+}
+
+.possibilita {
+  overflow: scroll;
+  padding-top: 10px;
+  height: 62px;
+  margin: 20px 0 0 10px;
+
+  width: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contenitore-form form .form-scritto label {
+    font-size: 25px;
+  }
+
+  .contenitore-form form {
+    width: 300px;
+  }
+
+  .contenitore-form form .form-scritto {
+    width: 90%;
+  }
+
+  .contenitore-form form .form-scritto .btn-conferma-promo {
+    width: 250px;
+    font-size: 15px;
+  }
+}
